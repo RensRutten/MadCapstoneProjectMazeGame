@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">GameMaze</string>
+    <string name="left">←</string>
+    <string name="right">→</string>
+    <string name="down">↓</string>
+    <string name="top">↑</string>
+    <string name="fog_of_war">Fog of War</string>
+    <string name="run">Run</string>
+    <string name="restart">Restart</string>
+</resources>
