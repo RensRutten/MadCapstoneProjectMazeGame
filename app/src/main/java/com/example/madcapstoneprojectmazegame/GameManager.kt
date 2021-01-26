@@ -12,15 +12,18 @@ import kotlin.math.min
 
 
 class GameManager(val context: Context) {
-    private var drawables : ArrayList<Drawable> = ArrayList()
-    lateinit var view : View
-    lateinit var player : Player
-    lateinit var maze : Maze
+    private var drawables: ArrayList<Drawable> = ArrayList()
+    lateinit var view: View
+    lateinit var player: Player
+    lateinit var maze: Maze
     lateinit var bonus: Bonus
     var score: Int = 0
-    private var rect : Rect = Rect()
+    private var rect: Rect = Rect()
+    private val divideScreensize = 2
+    private val create = 5
+
     init {
-        create(5)
+        create(create)
         Control(this)
     }
 
@@ -46,10 +49,10 @@ class GameManager(val context: Context) {
     fun setScreenSize(width: Int, height: Int) {
         val screenSize = min(width, height)
         rect.set(
-            (width - screenSize) / 2,
-            (height - screenSize) / 2,
-            (width + screenSize) / 2,
-            (height + screenSize) / 2
+                (width - screenSize) / divideScreensize,
+                (height - screenSize) / divideScreensize,
+                (width + screenSize) / divideScreensize,
+                (height + screenSize) / divideScreensize
         )
     }
 }

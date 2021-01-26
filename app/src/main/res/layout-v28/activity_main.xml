@@ -34,12 +34,14 @@
 
                 <Button
                     android:id="@+id/btUp"
-                    style="@style/ShapeAppearance.App.SmallComponent"
+                    style="?attr/materialButtonOutlinedStyle"
                     android:layout_width="70dp"
                     android:layout_height="70dp"
                     android:text="@string/top"
                     android:textSize="35sp"
-                    app:cornerRadius="@dimen/WalkButtons" />
+                    app:rippleColor="#FF6D00"
+                    app:shapeAppearance="@style/ShapeAppearance.App.SmallComponent"
+                    app:strokeColor="#000000" />
 
             </LinearLayout>
 
@@ -47,39 +49,42 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center"
-                android:paddingRight="5dp"
+                android:orientation="horizontal"
                 android:paddingLeft="5dp"
-                android:orientation="horizontal">
+                android:paddingRight="5dp">
 
                 <Button
                     android:id="@+id/btLeft"
+                    style="?attr/materialButtonOutlinedStyle"
                     android:layout_width="70dp"
-                    style="@style/Widget.MaterialComponents.Button"
                     android:layout_height="70dp"
                     android:text="@string/left"
-                    app:cornerRadius="@dimen/WalkButtons"
-                    android:textSize="35sp" />
+                    android:textSize="35sp"
+                    app:rippleColor="#FF6D00"
+                    app:shapeAppearance="@style/ShapeAppearance.App.SmallComponent"
+                    app:strokeColor="#000000" />
 
 
                 <LinearLayout
                     android:layout_width="70dp"
                     android:layout_height="match_parent"
-                    android:gravity="center"
                     android:layout_weight="1"
+                    android:gravity="center"
                     android:orientation="horizontal">
-
 
 
                 </LinearLayout>
 
                 <Button
                     android:id="@+id/btRight"
-                    style="@style/Widget.MaterialComponents.Button"
+                    style="?attr/materialButtonOutlinedStyle"
                     android:layout_width="70dp"
                     android:layout_height="70dp"
                     android:text="@string/right"
                     android:textSize="35sp"
-                    app:cornerRadius="@dimen/WalkButtons" />
+                    app:rippleColor="#FF6D00"
+                    app:shapeAppearance="@style/ShapeAppearance.App.SmallComponent"
+                    app:strokeColor="#000000" />
             </LinearLayout>
 
             <LinearLayout
@@ -90,14 +95,14 @@
 
                 <Button
                     android:id="@+id/btDown"
-                    style="@style/ShapeAppearance.App"
+                    style="?attr/materialButtonOutlinedStyle"
                     android:layout_width="70dp"
                     android:layout_height="70dp"
-                    android:rotationX="79"
-                    android:rotationY="-100"
-                    app:cornerRadius="@dimen/WalkButtons"
                     android:text="@string/down"
-                    android:textSize="35sp" />
+                    android:textSize="35sp"
+                    app:rippleColor="#FF6D00"
+                    app:shapeAppearance="@style/ShapeAppearance.App.SmallComponent"
+                    app:strokeColor="#000000" />
 
             </LinearLayout>
         </LinearLayout>
